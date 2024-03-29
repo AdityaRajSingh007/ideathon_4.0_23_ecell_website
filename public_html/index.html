@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ideathon | Amity Innovation Incubator</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'><link rel="stylesheet" href="./style.css">
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+      
+
+      <div id="logo" class="pull-left">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+        <a href="#intro" class="scrollto"><img src="img/logo.png" alt="" title=""></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#intro">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="team.html">Team</a></li>
+          <!--<li><a href="#speaker">Speakers</a></li>    ==========-->
+          <li><a href="#schedule">Schedule</a></li>
+
+          <li><a href="#gallery">Gallery</a></li>
+          <!--<li><a href="#supporters">Sponsors</a></li>    ==========-->    
+          <li><a href="#contact_us">Contact</a></li>
+          <li><a href="#faq">F.A.Q</a></li>
+          <li class="buy-tickets"><a href="#buy-tickets">Register</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <div class="as"><section id="intro">
+    <div class="intro-container wow fadeIn">
+      <main class="AB">IDEATHON 4.0 <br><h1>Innovation Unlocked</h1></main>
+      <p class="mb-4 pb-0" style="font-size:40px;">March 15 - 16 </p>
+      <div class="container">
+
+  <div id="countdown">
+    <ul>
+      <li><span id="days"></span>days</li>
+      <li><span id="hours"></span>Hours</li>
+      <li><span id="minutes"></span>Minutes</li>
+      <li><span id="seconds"></span>Seconds</li>
+    </ul>
+  </div>
+  <div id="content" class="emoji">
+    <span>🥳</span>
+    <span>🎉</span>
+    
+  </div>
+</div>
+      
+      <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video"
+        data-autoplay="true"></a>
+      <a href="#buy-tickets" class="about-btn scrollto">Register</a>
+    </div>
+  </section></div>
+  <script>
+      (function () {
+  const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+  //I'm adding this section so I don't have to keep updating this pen every year :-)
+  //remove this if you don't need it
+  let today = new Date(),
+      dd = String(today.getDate()).padStart(2, "0"),
+      mm = String(today.getMonth() + 1).padStart(2, "0"),
+      yyyy = today.getFullYear(),
+      nextYear = 2022 + 1,
+      dayMonth = "3/15/",
+      birthday = dayMonth + yyyy;
+  
+  today = mm + "/" + dd + "/" + yyyy;
+  if (today > birthday) {
+    birthday = dayMonth + nextYear;
+  }
+  //end
+  
+  const countDown = new Date(birthday).getTime(),
+      x = setInterval(function() {    
+
+        const now = new Date().getTime(),
+              distance = countDown - now;
+
+        document.getElementById("days").innerText = Math.floor(distance / (day)),
+          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+        //do something later when date is reached
+        if (distance < 0) {
+          document.getElementById("headline").innerText = "It's my birthday!";
+          document.getElementById("countdown").style.display = "none";
+          document.getElementById("content").style.display = "block";
+          clearInterval(x);
+        }
+        //seconds
+      }, 0)
+  }());
+  </script>
+<style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* general styling */
+:root {
+  --smaller: .75;
+}
+
+
+
+.container {
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-weight: normal;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+}
+
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+.emoji {
+  display: none;
+  padding: 1rem;
+}
+
+.emoji span {
+  font-size: 4rem;
+  padding: 0 .5rem;
+}
+
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: calc(1.5rem * var(--smaller));
+  }
+  
+  li {
+    font-size: calc(1.125rem * var(--smaller));
+  }
+  
+  li span {
+    font-size: calc(3.375rem * var(--smaller));
+  }
+}
+@media only screen and (max-width: 768px) {
+  @font-face {
+  src: url("https://www.axis-praxis.org/fonts/webfonts/MetaVariableDemo-Set.woff2")
+    format("woff2");
+  font-family: "Meta";
+  font-style: normal;
+  font-weight: normal;
+}
+
+  .as,#intro{
+    width: 100%; 
+  font-size: 2rem;
+  color:#fff;
+    text-shadow: 10px 10px 0px #00ffff,
+    15px 15px 0px #4D6F8D,
+    20px 20px 0px #6A95A6,
+    25px 25px 0px #9FBFBE,
+    45px 45px 10px #fffff;
+  cursor: pointer;
+  
+  }
+  .AB{
+  font-size: 3rem;
+   color:#fff;
+    text-shadow: 10px 10px 0px #00ffff,
+    15px 15px 0px #4D6F8D,
+    20px 20px 0px #6A95A6,
+    25px 25px 0px #9FBFBE,
+    45px 45px 10px #fffff;
+  cursor: pointer;
+  }
+  .AB:hover {
+  font-variation-settings: "wght" 100, "ital" 0;
+  text-shadow: none;
+}
+
+  
+}
+@media only screen and (min-width: 768px) {
+  @font-face {
+  src: url("https://www.axis-praxis.org/fonts/webfonts/MetaVariableDemo-Set.woff2")
+    format("woff2");
+  font-family: "Meta";
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+.AB {
+  transition: all 0.5s;
+  -webkit-text-stroke: 4px #fff;
+  font-variation-settings: "wght" 900, "ital" 1;
+  font-size: 9rem;
+  text-align: center;
+  color: transparent;
+  font-family: "Meta", sans-serif;
+  text-shadow: 10px 10px 0px #00ffff,
+    15px 15px 0px #4D6F8D,
+    20px 20px 0px #6A95A6,
+    25px 25px 0px #9FBFBE,
+    45px 45px 10px #fffff;
+  cursor: pointer;
+}
+
+.AB:hover {
+  font-variation-settings: "wght" 100, "ital" 0;
+  text-shadow: none;
+}
+
+
+
+  
+}
+
+</style>
+  <main id="main">
+
+    <!--==========================
+      About Section
+    ============================-->
+        <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9">
+            <h2>
+              About The Event
+            </h2>
+            <hr>
+            <p>The Ideathon is a platform that brings together
+              innovative minds from diverse backgrounds to
+              collaborate and turn their ideas into reality. The
+              event is a unique opportunity to network with
+              like-minded individuals and create solutions that
+              can have a lasting impact on the world.
+              Our goal is to foster a creative environment where
+              individuals can share their ideas and bring them
+              to life through collaboration and teamwork. The
+              Ideathon will feature "Ideation, team building,
+              MVP, Business model canvas, and pitching.
+              Further, we have keynote speakers, interactive
+              workshops, and opportunities for attendees to
+              showcase their ideas and receive feedback from
+              industry experts.
+              We are excited to bring together individuals
+              from a wide range of backgrounds, including
+              students, entrepreneurs, scientists, and
+              more, to collaborate and create innovative
+              solutions. Whether you have a fully formed
+              idea or just a spark of inspiration, we invite
+              you to join us and be a part of the Ideathon
+              event.
+              So come with an open mind, a willingness to
+              learn, and a passion for innovation. We look
+              forward to seeing the amazing ideas that will
+              be born at this year's Ideathon.
+            </p>
+          </div>
+          <div class="col-lg-3">
+            <h3>Where</h3>
+            <hr>
+            <p>
+              Amity University Rajasthan, SP-1 Kant Kalwar, NH11C, RIICO Industrial Area, Rajasthan 303002
+            </p>
+            <h3>When</h3>
+            <hr>
+            <p>15th to 16th March
+              <br>Wednesday - Thrusday</br>
+            </p>
+          </div>
+        </div>
+        <div class="row1">
+          <div class="col-lg-10">
+            <h2>
+              Amity University Rajasthan
+            </h2>
+            <hr>
+            <p>
+              Welcome to the world of Amity University, where knowledge, discipline and
+              recreation come together! The center of learning set amidst a lush green valley
+              is a treat for the eyes and the mind. Amity University, Rajasthan (AUR), offers its
+              students a campus for their superlative development. Amity University
+              Rajasthan, Jaipur was established in the State of Rajasthan, by an Act of the
+              State Legislature, passed on March 29, 2008, under the patronage of RBEF, a
+              registered, non-profit society. AUR is recognized by UGC under Section 2f and
+              empowered to award degrees under section 22.
+              Amity University Rajasthan has a beautiful eco-friendly green campus spread
+              over 152 acres of landmass. The University takes pride in its world-class
+              infrastructural facilities which have been scientifically and aesthetically
+              designed for the optimal use of natural resources. Individuals from many
+              different walks of life have been awarded Honorary Degrees by Amity
+              University. The recipient includes world leaders and royal figures, eminent
+              scientists, engineers, and inventors, individuals who have made significant
+              contributions in branches of business and industry, those who have
+              distinguished themselves in many fields across the creative and performing arts
+              and sports, and others who in their individual way, have made a significant
+              contribution to the greater good of society, or to the life of the University. Some
+              of the distinguished recipients of Honoris Causa include Dr. Vijay P. Bhatkar,
+              Shri N. R. Narayana Murthy, Lord Jeffery Archer, Shri G.E. Vahanvati, Noble
+              Laurette Prof. Muhammad Yunus, Padmashree, Dr. D.R. Mehta, Mr. Prasoon
+              Joshi among others
+            </p>
+          </div>
+          <div class="row2">
+            <div class="col-lg-10">
+
+              <h2>
+                Entrepreneurship-Cell, AUR
+              </h2>
+              <hr>
+              <p>Entrepreneurship Cell AUR aims to promote the entrepreneurship culture in
+                and around the campus by providing multiple platforms to budding
+                entrepreneurs where we can improve upon our business models, get
+                mentorship from successful entrepreneurs, interact with investors, and
+                groom our entrepreneurship skills. Basically, we provide a conducive and
+                healthy environment for budding entrepreneurs.
+                The Entrepreneurship Cell, AUR is also the primary entrepreneurshippromoting body of the Amity
+                University Rajasthan managed and run
+                completely by the students and faculties of the institute.
+                The E-Cell AUR is constantly hustling to support the hustlers of our country.
+                It has constantly been working to give entrepreneurs a platform where they
+                can get support and nurture their ideas.</p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!--==========================
+      Speakers Section
+    ============================
+       <div> <br>
+    <section id="speaker">
+     <div class="container wow fadeInUp">
+          <div class="section-header">
+            <h2>EVENT SPEAKERS</h2>
+            <p>Here are some of our speakers</p>
+          </div>   
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+          <div class="container">
+            <h2>Jane Doe</h2>
+            <p class="title">CEO & Founder</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>jane@example.com</p>
+            
+          </div>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
+          <div class="container">
+            <h2>Mike Ross</h2>
+            <p class="title">Art Director</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>mike@example.com</p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
+          <div class="container">
+            <h2>Mike Ross</h2>
+            <p class="title">Art Director</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>mike@example.com</p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
+          <div class="container">
+            <h2>Mike Ross</h2>
+            <p class="title">Art Director</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>mike@example.com</p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
+          <div class="container">
+            <h2>Mike Ross</h2>
+            <p class="title">Art Director</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>mike@example.com</p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/w3images/team3.jpg" alt="John" style="width:100%">
+          <div class="container">
+            <h2>John Doe</h2>
+            <p class="title">Designer</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>john@example.com</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    </section></div>
+    ==========-->
+    <!--==========================
+      Schedule Section
+    ============================-->
+    <section id="schedule" class="section-with-bg">
+        <div class="container wow fadeInUp">
+          <div class="section-header">
+            <h2>Event Schedule</h2>
+            <p>Here is our event schedule</p>
+          </div>
+  
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" href="#day-1" role="tab" data-toggle="tab">Day 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#day-2" role="tab" data-toggle="tab">Day 2</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#day-3" role="tab" data-toggle="tab">Day 3</a>
+            </li> -->
+          </ul>
+  
+          <h3 class="sub-heading">IDEATHON is the event of ECELL AUR Jaipur</h3>
+  
+          <div class="tab-content row justify-content-center">
+  
+            <!-- Schedule Day 1 -->
+            <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+  
+              <div class="row schedule-item">
+                <div class="col-md-2" style= "color: #000000;"><time>10:30 AM - 11:30 AM</time></div>
+                <div class="col-md-10">
+                  <h4>INAUGURAL CEREMONY</h4>
+                  
+                </div>
+              </div>
+  
+              <div class="row schedule-item">
+                <div class="col-md-2" style= "color: #000000;"><time>11:30 AM - 01:00 PM</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    
+                  </div>
+                  <h4>Workshop on "Think Business: Bringing Ideas to Life" </h4>
+                  
+                </div>
+              </div>
+  
+              <div class="row schedule-item">
+                <div class="col-md-2" style= "color: #000000;"><time>01:00 PM - 02:00 PM</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                                      </div>
+                  <h4>LUNCH BREAK</h4>
+                  
+                </div>
+              </div>
+  
+              <div class="row schedule-item">
+                <div class="col-md-2" style= "color: #000000;"><time>02:15 PM - 03:30 PM</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                                      </div>
+                  <h4>Principal's Meet: Where Leaders Meet Innovation</h4>
+                  
+                </div>
+              </div>
+  
+              <div class="row schedule-item">
+                <div class="col-md-2" style= "color: #000000;"><time>02:30 PM - 03:30 PM</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    
+                  </div>
+                  <h4>Brand Wars: Marketing Campaign Pitch Competition</h4>
+                  
+                </div>
+              </div>
+  
+              <div class="row schedule-item">
+                <div class="col-md-2" style= "color: #000000;"><time>03:30 PM - 04:30 PM</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    
+                  </div>
+                  <h4>CULTURAL EVENING</h4>
+                 
+                </div>
+              </div>
+  
+              
+  
+            </div>
+            <!-- End Schdule Day 1 -->
+  
+            <!-- Schdule Day 2 -->
+            <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
+  
+              <div class="row schedule-item">
+                <div class="col-md-2" style= "color: #000000;"><time>09:15 AM - 10:15 AM</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                   
+                  </div>
+                  <h4>Pitch Deck Submission & Slot Allotment</h4>
+                  
+                </div>
+              </div>
+  
+              <div class="row schedule-item">
+                <div class="col-md-2" style= "color: #000000;"><time>10:30 AM - 11:45 AM</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                                      </div>
+                  <h4>Entrepreneur Networking: A Meet-up of Like-Minds</h4>
+                  
+                </div>
+              </div>
+  
+              <div class="row schedule-item">
+                <div class="col-md-2" style= "color: #000000;"><time>12:00 PM - 01:00 PM</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                                      </div>
+                  <h4>Fireside Chat with Investors</h4>
+                  
+                </div>
+              </div>
+  
+              <div class="row schedule-item">
+                <div class="col-md-2" style= "color: #000000;"><time>01:00 PM - 02:00 PM</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                                      </div>
+                  <h4>LUNCH BREAK</h4>
+                  
+                </div>
+              </div>
+  
+              <div class="row schedule-item">
+                <div class="col-md-2" style= "color: #000000;"><time>02:00 PM - 03:30 PM</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                                      </div>
+                  <h4>The Battle of Piches: Idea Pitching Competiton</h4>
+                  
+                </div>
+              </div>
+  
+              <div class="row schedule-item">
+                <div class="col-md-2" style= "color: #000000;"><time>03:30 PM - 05:00 PM</time></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    
+                  </div>
+                  <h4>Celebrity Evening and Valedictory</h4>
+                                  </div>
+              </div>
+  
+            </div>
+            <!-- End Schdule Day 2 -->
+  
+            
+  
+          </div>
+  
+        </div>
+  </section>
+    <!--==========================
+      Venue Section
+    ============================-->
+   
+    <!--==========================
+      Hotels Section
+    ============================-->
+   
+
+    <!--==========================
+      Gallery Section
+    ============================-->
+      <section id="gallery" class="wow fadeInUp">
+    <div class="container">
+        <div class="section-header">
+          <h2>Gallery</h2>
+          <p>Our Previous Ideathon!</p>
+        </div>
+      </div>
+
+    <div class="container">
+      <div class="row">
+        
+            
+        <a href="./img/a.JPG" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+         <div class= "j"> <img src="./img/a.JPG" class="img-fluid rounded"></div>
+        </a>
+        <a href="./img/b.JPG" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+          <div class= "j"><img src="./img/b.JPG" class="img-fluid rounded"></div>
+        </a>
+        <a href="./img/c.JPG" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+          <div class= "j"><img src="./img/c.JPG" class="img-fluid rounded"></div>
+        </a>
+      </div>
+      <div class="row">
+        <a href="./img/d.JPG" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+          <div class= "j"><img src="./img/d.JPG" class="img-fluid rounded"></div>
+        </a>
+        <a href="./img/e.JPG" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+         <div class= "j"><img src="./img/e.JPG" class="img-fluid rounded"></div>
+        </a>
+        <a href="./img/f.jpeg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+          <div class= "j"><img src="./img/f.jpeg" class="img-fluid rounded"></div>
+        </a>
+      </div>
+       <div class="row">
+        <a href="./img/g.JPG" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+          <div class= "j"><img src="./img/g.JPG" class="img-fluid rounded"></div>
+        </a>
+        <a href="./img/h.JPG" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+          <div class= "j"><img src="./img/h.JPG" class="img-fluid rounded"></div>
+        </a>
+        <a href="./img/i.JPG" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+          <div class= "j"><img src="./img/i.JPG" class="img-fluid rounded"></div>
+        </a>
+      </div>
+    </div>
+<style>
+.j:hover{transform:scale(1.1);
+    
+    
+}
+.row {
+  margin: 15px;
+}
+</style>
+<script>
+  $(document).on("click", '[data-toggle="lightbox"]', function(event) {
+  event.preventDefault();
+  $(this).ekkoLightbox();
+});
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js'></script><script  src="./script.js"></script>
+
+    </section>
+
+
+    <!--==========================
+      Sponsors Section
+    ============================   
+    <section id="supporters" class="section-with-bg wow fadeInUp">
+
+      <div class="container">
+        <div class="section-header">
+          <h2>Sponsors</h2>
+        </div>
+
+        <div class="row no-gutters supporters-wrap clearfix">
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/supporters/1.png" class="img-fluid" alt="">
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/supporters/2.png" class="img-fluid" alt="">
+            </div>
+          </div>
+        
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/supporters/3.png" class="img-fluid" alt="">
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/supporters/4.png" class="img-fluid" alt="">
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/supporters/5.png" class="img-fluid" alt="">
+            </div>
+          </div>
+        
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/supporters/6.png" class="img-fluid" alt="">
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/supporters/7.png" class="img-fluid" alt="">
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/supporters/8.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    ==========-->
+    
+    <!--==========================
+      Buy Ticket Section
+    ============================-->
+    <section id="buy-tickets" class="section-with-bg wow fadeInUp">
+      <div class="container">
+
+        <div class="section-header">
+          <h2>REGISTER</h2>
+
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <h5 class="card-title  text-uppercase text-center" style="color:white;font-size: 20px;">Idea Pitching
+                </h5>
+                <h6 class="card-price text-center"  style="color:white;">Rs.500/-</h6>
+                <hr style="background-color: #fff;">
+                <p style="color:white;">
+                  The event is a unique opportunity to network with like-minded individuals and create solutions that can have a lasting impact on the world.
+                </p>
+                <hr>
+                <div class="text-center">
+                  <button type="button" class="btn" onclick="window.location.href='https://rzp.io/l/oaUre8PB';"
+                    data-ticket-type="standard-access">Register Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <h5 class="card-title  text-uppercase text-center" style="color:white;font-size: 20px;">Brand Wars
+                </h5>
+                <h6 class="card-price text-center" style="color:white;" >Rs.500/-</h6>
+                 <hr style="background-color: #fff;">
+                <p style="color:white;">
+                  This is where creativity meets innovation! This event is a platform for individuals to come together and unleash their innovative potential.
+                </p>
+                <hr>
+                <div class="text-center">
+                  <button type="button" class="btn" onclick="window.location.href='https://rzp.io/l/xeGLfW1tob';"
+                    data-ticket-type="pro-access">Register Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Order Form -->
+      <div id="buy-ticket-modal" class="modal fade">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" style="font-weight: bold; color: rgb(9, 12, 56)"></h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form onsubmit="sendemail()">
+                <form method="POST" action="#">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="your-name" placeholder="Your Name"
+                      style="border-radius: 5px;">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="your-email" placeholder="Your Email"
+                      style="border-radius: 5px;">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="your-mobile" placeholder="Your Mobile No."
+                      style="border-radius: 5px;">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="your-institution" placeholder="Your Institution"
+                      style="border-radius: 5px;">
+                  </div>
+                  <div class="form-group">
+                    <button type="submit" class="btn"><a href="https://payments.cashfree.com/forms/ideathon">Buy Now</a></button>
+                  </div>
+                </form>
+              </form>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+    </script>
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact_us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <div class="contact_inner">
+                        <div class="row">
+                            <div class="col-md-10">
+                                <div class="contact_form_inner">
+                                    <div class="contact_field">
+                                        <h3>Contact Us</h3>
+                                        <p>Feel Free to contact us any time. We will get back to you as soon as we can!.</p>
+                                        <input type="text" class="form-control form-group" placeholder="Name" />
+                                        <input type="text" class="form-control form-group" placeholder="Email" />
+                                        <textarea class="form-control form-group" placeholder="Message"></textarea>
+                                        <button class="contact_form_submit">Send</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="right_conatct_social_icon d-flex align-items-end">
+                                   <div class="socil_item_inner d-flex">
+                                      <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                                      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact_info_sec" style="text-align: left;">
+                            <h4 style="color:white;">Contact Info</h4>
+                            <div class="d-flex info_single align-items-center">
+                                <i class="fas fa-headset"></i>
+                                
+                                <span style="text-align: center;">Anushka Mathur: 7374883421<br>
+                                      Keshav Sharma: 8000563017</span>
+                            </div>
+                            <div class="d-flex info_single align-items-center">
+                                <i class="fas fa-envelope-open-text"></i>
+                                <span style="text-align: left; padding-left: 27px;">ecellaurjpr@gmail.com</span>
+                            </div>
+                            <div class="d-flex info_single align-items-center">
+                                <i class="fas fa-map-marked-alt"></i>
+                                <span style="text-align: center;">Amity University Jaipur, SP-1 Kant Kalwar, NH11C, RIICO Industrial Area, Rajasthan</span>
+                            </div>
+            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="map_sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <div class="map_inner">
+                        <h4>Find Us on Google Map</h4>
+                        <div class="map_bind">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3549.3436553748516!2d75.95968859999999!3d27.176933800000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396da7055b53a087%3A0xcda4045979638d31!2sAmity%20University!5e0!3m2!1sen!2sin!4v1677230385941!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+<!--==========================
+      F.A.Q Section
+    ============================-->
+    <section id="faq" class="wow fadeInUp">
+
+      <div class="container">
+
+        <div class="section-header">
+          <h2>F.A.Q </h2>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+              <ul id="faq-list">
+
+                <li>
+                  <a data-toggle="collapse" class="collapsed" href="#faq1">WHAT IS IDEATHON <i class="fa fa-minus-circle"></i></a>
+                  <div id="faq1" class="collapse" data-parent="#faq-list">
+                    <p style = "color: #000000;">
+                     IDEATHON IS THE OF ECELL WHICH PROVIDES US VARIOUS ACTIVITES WHICH GIVES US GOOD EXPOSURE.
+                    </p>
+                  </div>
+                </li>
+      
+                <li>
+                  <a data-toggle="collapse" href="#faq2" class="collapsed">BENEFITS TO JOIN THIS EVENT <i class="fa fa-minus-circle"></i></a>
+                  <div id="faq2" class="collapse" data-parent="#faq-list">
+                    <p style = "color: #000000;">
+                  ITS GIVE YOU GOOD EXPOSURE AND BETTER EXPERIENCE
+                    </p>
+                  </div>
+                </li>
+      
+                <li>
+                  <a data-toggle="collapse" href="#faq3" class="collapsed">WHO ARE ORGANIZING THIS EVENT <i class="fa fa-minus-circle"></i></a>
+                  <div id="faq3" class="collapse" data-parent="#faq-list">
+                    <p style = "color: #000000;">
+                      THIS EVENT IS ORGANISED BY THE ECELL.
+                    </p>
+                  </div>
+                </li>
+      
+                <li>
+                  <a data-toggle="collapse" href="#faq4" class="collapsed"> WHO WORK ON THIS EVENT<i class="fa fa-minus-circle"></i></a>
+                  <div id="faq4" class="collapse" data-parent="#faq-list">
+                    <p style = "color: #000000;">
+                        THE ECELL MEMBER AND BEST FACULTY.
+                    </p>
+                  </div>
+                </li>
+      
+
+      
+                <li>
+                  <a data-toggle="collapse" href="#faq6" class="collapsed">Do we need to pay for attending Ideathon 4.0  <i class="fa fa-minus-circle"></i></a>
+                  <div id="faq6" class="collapse" data-parent="#faq-list">
+                    <p style = "color: #000000;">
+                     Yes, there is a basic minimal fee to attend this event.
+                    </p>
+                  </div>
+                </li>
+      
+              </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <img src="img/idea4.png" alt="TheEvenet">
+            <p>I HOPE THIS IS YOUR WONDERFUL EXPERIANCE.
+              THANK YOU FOR JOINING US
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Home</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">About us</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Services</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Home</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">About us</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Services</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              AMITY UNIVERSITY <br>
+              JAIPUR<br>
+              RAJASTHAN <br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong>ECELLAUR@gmail.com<br>
+            </p>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>TheEvent</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
+        -->
+        Designed by <a href="https://in.linkedin.com/company/entrepreneurship-cell-aii-jaipur/">Technical Team</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/venobox/venobox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
+
+
+
+
